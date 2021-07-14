@@ -1,9 +1,12 @@
-var express = require("express");
-var router = express.Router();
+const express = require("express");
+const router = express.Router();
 
-/* Jobs Api */
-const jobApi = require("./job.api");
-router.use("/jobs", jobApi);
+//// jobsApi
+const jobsApi = require("./job.api");
+router.use("/jobs", jobsApi);
+
+///companiesApi
+
+const companyApi = require("./companies.api");
+router.use("/companies", companyApi);
 module.exports = router;
-
-/* companies Api */
